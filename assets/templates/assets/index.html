@@ -1,0 +1,9 @@
+{% if latest_unit_list %}
+    <ul>
+    {% for unit in latest_unit_list %}
+        <li><a href="/assets/unit/{{ unit.id }}/">{{ unit.serial }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No units are available.</p>
+{% endif %}
